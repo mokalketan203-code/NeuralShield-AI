@@ -19,6 +19,7 @@ from datetime import datetime
 MODEL_VERSION = "1.0.4"
 MODEL_DATE = "2025-12-25"
 MODEL_TYPE = "MultinomialNB (Naive Bayes)"
+HISTORY_FILE = "scan_history.csv"
 
 st.set_page_config(
     page_title="NeuralShield | Cyber Security Dashboard",
@@ -27,14 +28,56 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- SESSION STATE INITIALIZATION ---
-if 'history' not in st.session_state: st.session_state.history = []
-if 'analyzed' not in st.session_state: st.session_state.analyzed = False
-if 'total_scans' not in st.session_state: st.session_state.total_scans = 0
-if 'phishing_count' not in st.session_state: st.session_state.phishing_count = 0
-if 'safe_count' not in st.session_state: st.session_state.safe_count = 0
+# --- PERSISTENCE HELPER FUNCTIONS (SAVE/LOAD) ---
+def load_data():
+    """Loads scan history and counts from CSV file on startup"""
+    if not os.path.exists(HISTORY_FILE):
+        return [], 0, 0, 0 # history, total, phishing, safe
+    
+    try:
+        df = pd.read_csv(HISTORY_FILE)
+        # Convert to list of dicts for history
+        # We only take the last 10 for the sidebar to keep it clean
+        history_data = df.tail(10).to_dict('records')
+        # Reverse so newest is first
+        history_data = history_data[::-1]
+        
+        total = len(df)
+        phishing = len(df[df['status'] == 'PHISHING'])
+        safe = len(df[df['status'] == 'SAFE'])
+        
+        return history_data, total, phishing, safe
+    except Exception as e:
+        return [], 0, 0, 0
 
-# --- UI/UX: MODERN HACKER THEME CSS (From Request) ---
+def save_scan_result(email, status, confidence):
+    """Saves a single scan result to the CSV file"""
+    file_exists = os.path.isfile(HISTORY_FILE)
+    
+    try:
+        with open(HISTORY_FILE, mode='a', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            # Write header if new file
+            if not file_exists:
+                writer.writerow(['timestamp', 'email', 'status', 'conf'])
+            
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            writer.writerow([timestamp, email, status, confidence])
+    except Exception as e:
+        st.error(f"Error saving history: {e}")
+
+# --- SESSION STATE INITIALIZATION (WITH AUTO-LOAD) ---
+# We load from file ONLY if session state is empty (first load)
+if 'history' not in st.session_state:
+    hist, tot, phish, safe = load_data()
+    st.session_state.history = hist
+    st.session_state.total_scans = tot
+    st.session_state.phishing_count = phish
+    st.session_state.safe_count = safe
+
+if 'analyzed' not in st.session_state: st.session_state.analyzed = False
+
+# --- UI/UX: MODERN HACKER THEME CSS ---
 st.markdown("""
     <style>
     /* Global Styles */
@@ -183,8 +226,7 @@ def save_feedback(text, label):
 # --- CRITICAL PRODUCTION FUNCTION: PDF FIX ---
 def clean_text_for_pdf(text):
     """
-    Removes characters that FPDF (latin-1) cannot handle, 
-    like smart quotes, emojis, etc.
+    Removes characters that FPDF (latin-1) cannot handle.
     """
     if not isinstance(text, str): return str(text)
     replacements = {
@@ -244,7 +286,7 @@ def create_pdf_report(text, sender, prediction, confidence, urls, keywords, ips)
     
     return pdf.output(dest='S').encode('latin-1')
 
-# --- SIDEBAR (UI/UX from Requirement) ---
+# --- SIDEBAR (UI/UX) ---
 with st.sidebar:
     st.markdown("### 📊 Live Dashboard")
     
@@ -295,8 +337,7 @@ with st.sidebar:
     st.markdown("---")
     show_debug = st.checkbox("🐞 Debug Mode")
 
-# --- MAIN PAGE (UI/UX from Requirement) ---
-# Header
+# --- MAIN PAGE (UI/UX) ---
 col1, col2 = st.columns([0.1, 0.9])
 with col1:
     st.image("https://cdn-icons-png.flaticon.com/512/2092/2092663.png", width=100)
@@ -308,7 +349,6 @@ st.markdown("### Advanced Phishing Email Analysis System")
 col_input, col_viz = st.columns([2, 1])
 
 with col_input:
-    # Inputs matching the requested UI (Standard inputs with labels)
     sender_email = st.text_input("Sender Email Address (Optional):", placeholder="e.g. support@company.com")
     email_text = st.text_area("Email Content:", height=250, placeholder="Paste the suspicious email text here...")
 
@@ -316,7 +356,6 @@ with col_input:
         if not check_rate_limit():
             st.error("⏳ RATE LIMIT EXCEEDED: Please wait 2 seconds between scans.")
         elif email_text:
-            st.session_state.total_scans += 1
             
             safe_text = sanitize_input(email_text)
             safe_sender = sanitize_input(sender_email)
@@ -339,6 +378,14 @@ with col_input:
                 st.session_state.safe_count += 1
                 status = "SAFE"
             
+            # Update Total
+            st.session_state.total_scans += 1
+            
+            conf_str = f"{round(confidence*100, 1)}%"
+            
+            # --- SAVE TO FILE (PERSISTENCE) ---
+            save_scan_result(safe_sender if safe_sender else "Unknown Sender", status, conf_str)
+            
             st.session_state.raw_proba = proba 
             st.session_state.prediction = prediction
             st.session_state.confidence = confidence
@@ -357,13 +404,14 @@ with col_input:
             except ValueError:
                 st.session_state.wordcloud_fig = None
             
+            # Update Session History
             st.session_state.history.insert(0, {
                 "email": safe_sender if safe_sender else "Unknown Sender",
                 "status": status,
-                "conf": f"{round(confidence*100, 1)}%"
+                "conf": conf_str
             })
             
-            st.rerun() # Keep rerun to refresh sidebar metrics immediately
+            st.rerun() # Refresh page to show new stats in sidebar
             # --- PRODUCTION LOGIC END ---
         else:
             st.warning("⚠️ Please enter text to analyze.")
@@ -382,7 +430,7 @@ if st.session_state.analyzed:
         else:
             st.success(f"✅ **SAFE EMAIL** (Confidence: {round(confidence*100, 2)}%)")
             
-        # PRODUCTION: PDF Generation using the CLEAN function
+        # PRODUCTION: PDF Generation
         pdf_bytes = create_pdf_report(
             st.session_state.text, st.session_state.sender, prediction, confidence, 
             st.session_state.urls, st.session_state.keywords, st.session_state.ips
