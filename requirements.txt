@@ -1,6 +1,10 @@
-pandas
-scikit-learn
-nltk
 streamlit
+scikit-learn
 joblib
-pip freeze > requirements.txt
+nltk
+matplotlib
+wordcloud
+whois
+fpdf
+requests
+pandas
