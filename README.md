@@ -24,29 +24,3 @@ SafeGuard is a Machine Learning-powered application designed to detect phishing 
 ## 💿 How to Run
 1.  Install dependencies: `pip install -r requirements.txt`
 2.  Run the app: `python -m streamlit run app.py`
-
----
-*Built as a 4-Day AI Sprint Project.*
-
-
-
-
-
-######
-**
-` i want add this things on my project Things you did well ✅
-
-Session state usage (many beginners miss this)
-Modular helper functions
-
-Defensive error handling for missing models
-Small improvement ideas
-Highlight keywords inside the email text
-Add URL reputation check (e.g., domain length, IP-based URLs)
-Handle class imbalance if phishing data is skewed
-also this [Security improvements
-Model improvement ideas]
-* #
-
-# give me 15 some Small improvement ideas for this project 
-##
