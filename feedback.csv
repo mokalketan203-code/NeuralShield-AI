@@ -1,0 +1,561 @@
+text,user_suggested_label
+"http://fake-site.com/login
+",Safe
+"# Sidebar
+st.sidebar.title(""System Info"")
+st.sidebar.info(""Model: Naive Bayes Classifier"")
+st.sidebar.info(""Features: URL Scanning, Keyword Highlighting"")",Safe
+"st.sidebar.title(""System Info"")
+st.sidebar.info(""Model: Naive Bayes Classifier"")
+st.sidebar.info(""Features: URL Scanning, Keyword Highlighting"")",Phishing
+"URGENT: Your bank account has been suspended!
+
+We noticed unusual activity on your account.
+Please click the link below immediately to verify your identity:
+
+http://secure-bank-verification.com/login
+
+Failure to verify within 24 hours will result in permanent suspension.
+",Phishing
+"Security Alert
+
+Your email password is about to expire.
+Click here to reset your password now:
+
+https://mail-security-check.net/reset
+
+If you do not update your password, your email access will be blocked.
+",Safe
+"Security Alert
+
+Your email password is about to expire.
+Click here to reset your password now:
+
+https://mail-security-check.net/reset
+
+If you do not update your password, your email access will be blocked.
+",Phishing
+"Security Alert
+
+Your email password is about to expire.
+Click here to reset your password now:
+
+https://mail-security-check.net/reset
+
+If you do not update your password, your email access will be blocked.
+",Phishing
+"Congratulations!
+
+You have won a reward of $10,000 in our annual lottery.
+To claim your prize, please update your account information here:
+
+www.claim-your-reward-now.com
+
+Act fast to avoid losing your winnings!
+",Phishing
+"Hello Team,
+
+This is a reminder that our weekly meeting will take place
+on Thursday at 10:00 AM via Microsoft Teams.
+
+Agenda and notes will be shared internally.
+
+Best regards,
+HR Department
+",Safe
+"Hello Team,
+
+This is a reminder that our weekly meeting will take place
+on Thursday at 10:00 AM via Microsoft Teams.
+
+Agenda and notes will be shared internally.
+
+Best regards,
+HR Department
+",Safe
+"Hey,
+
+Just checking in to see if you're free this weekend.
+Let me know if you'd like to catch up.
+
+Talk soon!
+",Safe
+"Hey,
+
+Just checking in to see if you're free this weekend.
+Let me know if you'd like to catch up.
+
+Talk soon!
+",Safe
+"Hey,
+
+Just checking in to see if you're free this weekend.
+Let me know if you'd like to catch up.
+
+Talk soon!
+",Safe
+"Hello,
+
+Your account settings were updated successfully.
+If you did not make this change, please contact our support team.
+
+Thank you,
+Customer Support
+",Safe
+"Hello,
+
+Your account settings were updated successfully.
+If you did not make this change, please contact our support team.
+
+Thank you,
+Customer Support
+",Safe
+"Click here to verify your account:
+http://verify-now-account-security.com",Phishing
+"URGENT ACTION REQUIRED
+
+Your bank account will be locked today.
+Verify your information immediately to avoid suspension.
+",Phishing
+"URGENT ACTION REQUIRED
+
+Your bank account will be locked today.
+Verify your information immediately to avoid suspension.
+",Phishing
+"URGENT ACTION REQUIRED
+
+Your bank account will be locked today.
+Verify your information immediately to avoid suspension.
+",Phishing
+"text,user_suggested_label
+""email content here"",Phishing
+",Phishing
+"text,user_suggested_label
+""email content here"",Phishing
+",Phishing
+"text,user_suggested_label
+""email content here"",Phishing
+",Phishing
+"text,user_suggested_label
+""email content here"",Phishing
+",Safe
+"text,user_suggested_label
+""email content here"",Phishing
+",Safe
+"text,user_suggested_label
+""email content here"",Phishing
+",Safe
+"text,user_suggested_label
+""email content here"",Phishing
+",Safe
+"text,user_suggested_label
+""email content here"",Phishing
+",Safe
+"text,user_suggested_label
+""email content here"",Phishing
+",Phishing
+ SafeGuard AI,Safe
+ SafeGuard AI,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://www.youtube.com/,Safe
+https://google.com,Safe
+"Hi Team,
+
+I hope you’re all having a great day!
+
+I’m writing to inform you of a recent security incident that has impacted our company. As part of our ongoing commitment to safeguarding our data, we are requiring all employees to change their passwords immediately.
+
+Here’s what you need to do:
+
+Use this password reset link and change your email password by the end of the day today.
+Ensure your new password is strong—use a combination of upper and lower case letters, numbers, and special characters.
+Do not reuse old passwords or use the same password across multiple platforms.
+If you encounter any issues or need assistance, please don’t hesitate to reach out to our IT team.
+
+Thank you for your prompt attention to this matter. Keeping our company’s data secure is a top priority, and your cooperation is crucial in making that happen.
+
+Best regards,
+
+Contoso Corp IT Team",Safe
+"Hi Team,
+
+I hope you’re all having a great day!
+
+I’m writing to inform you of a recent security incident that has impacted our company. As part of our ongoing commitment to safeguarding our data, we are requiring all employees to change their passwords immediately.
+
+Here’s what you need to do:
+
+Use this password reset link and change your email password by the end of the day today.
+Ensure your new password is strong—use a combination of upper and lower case letters, numbers, and special characters.
+Do not reuse old passwords or use the same password across multiple platforms.
+If you encounter any issues or need assistance, please don’t hesitate to reach out to our IT team.
+
+Thank you for your prompt attention to this matter. Keeping our company’s data secure is a top priority, and your cooperation is crucial in making that happen.
+
+Best regards,
+
+Contoso Corp IT Team",Safe
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Safe
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Safe
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Safe
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"Dear People’s Bank Client,
+For your security, the profi le that you are using to access People’s Bank Online Banking has been locked because
+of too many failed login attempts. You can unlock this profi le online by selecting an option below:
+Unlock your profi le with:
+My ATM/Visa Check Card number and PIN.
+Other personal information (Social Security Number, Account #, etc)
+E-mail address.
+We regret any inconvenience this may cause you.
+Sincerely,
+People’s Bank Account Review Department.
+We are requesting this information to verify and protect your identity. This is in order to prevent the use of the U.S.
+banking system in terrorist and other illegal activity.
+Need help? Use “Site Helper” or call customer service at 1.800.788.7000.
+Please do not “Reply” to this Alert.
+©2005 People’s Bank Financial Group. All rights reserved.",Phishing
+"Dear People’s Bank Client,
+For your security, the profi le that you are using to access People’s Bank Online Banking has been locked because
+of too many failed login attempts. You can unlock this profi le online by selecting an option below:
+Unlock your profi le with:
+My ATM/Visa Check Card number and PIN.
+Other personal information (Social Security Number, Account #, etc)
+E-mail address.
+We regret any inconvenience this may cause you.
+Sincerely,
+People’s Bank Account Review Department.
+We are requesting this information to verify and protect your identity. This is in order to prevent the use of the U.S.
+banking system in terrorist and other illegal activity.
+Need help? Use “Site Helper” or call customer service at 1.800.788.7000.
+Please do not “Reply” to this Alert.
+©2005 People’s Bank Financial Group. All rights reserved.",Phishing
+"Dear People’s Bank Client,
+For your security, the profi le that you are using to access People’s Bank Online Banking has been locked because
+of too many failed login attempts. You can unlock this profi le online by selecting an option below:
+Unlock your profi le with:
+My ATM/Visa Check Card number and PIN.
+Other personal information (Social Security Number, Account #, etc)
+E-mail address.
+We regret any inconvenience this may cause you.
+Sincerely,
+People’s Bank Account Review Department.
+We are requesting this information to verify and protect your identity. This is in order to prevent the use of the U.S.
+banking system in terrorist and other illegal activity.
+Need help? Use “Site Helper” or call customer service at 1.800.788.7000.
+Please do not “Reply” to this Alert.
+©2005 People’s Bank Financial Group. All rights reserved.",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+"From:”People’s Bank”
+Subject: Offi cial information for all People’s Bank clients.
+Dear People’s Bank Client,
+To provide our customers the most effective and secure online access to their accounts, we are continually upgrading our online services. As we add new features and enhancements to our service, there are certain browser
+versions which will not support these system upgrades. As many customers already know, Microsoft Internet
+Explorer has signifi cant ‘holes’ or vulnerabilities that virus creators can easily take advantage of.
+In order to further protect your account, we have introduced some new important security standards and browser
+requirements. People’s Bank security systems require that you test your browser now to see if meets the requirements to People’s Bank Online Banking.
+Please -LINK REMOVED FROM THIS EXAMPLE- Sign on to Internet Banking in order to verify security update
+installation. This security update will be effective immediately. In the meantime, some of the Internet Banking
+services may not be available.
+Sincerly yours, People’s Bank Team!",Phishing
+Please update your password at https://google.com immediately.,Safe
+"Dear customer, your Amazon account is locked.",Phishing
+"Dear customer, your Amazon account is locked.",Phishing
+"Dear customer, your Amazon account is locked.",Phishing
+"Dear customer, your facebook account is locked.",Phishing
+"Dear customer, your facebook account is locked.",Phishing
+"Dear customer, your sbi bank account is locked.",Phishing
+"Subject Verify Your Identity to Avoid Account Limits
+Dear Valued Client,
+
+Due to updated security regulations, YourBank requires all customers to verify their identity.
+
+Please complete verification to avoid service limitations:
+
+[http://verify-yourbank[.]org/kyc](http://verify-yourbank[.]org/kyc)
+
+Thank you for helping us keep your account safe.
+
+Compliance Team
+YourBank
+",Phishing
+"Subject Verify Your Identity to Avoid Account Limits
+Dear Valued Client,
+
+Due to updated security regulations, YourBank requires all customers to verify their identity.
+
+Please complete verification to avoid service limitations:
+
+[http://verify-yourbank[.]org/kyc](http://verify-yourbank[.]org/kyc)
+
+Thank you for helping us keep your account safe.
+
+Compliance Team
+YourBank
+",Phishing
+"pip install lxml
+",Safe
+http://g0ogle.com,Phishing
+http://g0ogle.com,Phishing
+http://g0ogle.com,Phishing
+http://go0gle.com,Phishing
+Click here to login: http://104.23.1.55/login,Phishing
+click here for reset your microsoft account http://micr05oft@ccou|\|.google.php.in,Phishing
+dfsnkosfj-021=-/wfkw//ewko,Safe
+&quot;URGENT: Your account is locked. Click here to verify immediately.&quot;,Phishing
+&quot;URGENT: Your account is locked. Click here to verify immediately.&quot;,Phishing
+"&lt;script&gt;alert(&#x27;HACKED&#x27;)&lt;/script&gt;
+",Phishing
+SELECT * FROM users WHERE 1=1,Safe
+"http://192.168.1.1/login.php
+",Phishing
+&quot;Visit https://google.com and https://evil-site.com&quot;,Phishing
+&quot;Hello friend. Click http://evil.com to verify bank.&quot;,Phishing
+Please send me otp on this link https://microsoft. Help.gov.in,Phishing
+"Dear Customer,
+
+Greetings from TransUnion CIBIL !
+
+We wish to inform you that a recent loan/credit card enquiry was made on your CIBIL Score and Report with us.
+
+The details of the enquiry are mentioned below:
+
+Bank Name : SBI CARD
+Enquiry Control Number (ECN): 10054178119
+Enquiry Purpose : CREDIT CARD
+Date of Enquiry : 2025-12-12 16:19:04
+In case of any queries or clarification regarding the above information, please contact the respective bank/financial institution or connect with us. Please quote your ECN number(s) while communicating with us to help us assist you better.
+
+Visit us for more details
+A credit enquiry occurs when a bank/financial institution checks your CIBIL report, usually in connection with a loan or credit application. While checking your CIBIL report, it is important to verify your personal information.
+
+There are certain types of loans (such as small ticket Personal Loans) which are availed through digital lending platforms. These are often financed by partner banks or financial institutions, whose names may appear on your CIBIL Report instead of the platform. Key scenarios include:
+
+Regulated entities offering credit under a different brand name. For e.g., legal entity name displayed on CIBIL report instead of popular application name
+Regulated entities offering credit through multiple brands and channels
+Loans taken through a digital lending platform may appear multiple times on your CIBIL report, where the loan amount is split between different banks or financial institutions. To better understand this co-lending arrangement, it is essential to carefully review the terms and conditions provided by the digital lending platform
+Note: Dispute Resolution is offered for FREE by CIBIL. Consumers are not required to pay any fee for rectifying discrepancies or updating their credit information. Visit us for more details.
+
+Best regards,
+
+TransUnion CIBIL",Phishing
+"Dear Customer,
+
+Greetings from TransUnion CIBIL !
+
+We wish to inform you that a recent loan/credit card enquiry was made on your CIBIL Score and Report with us.
+
+The details of the enquiry are mentioned below:
+
+Bank Name : SBI CARD
+Enquiry Control Number (ECN): 10054178119
+Enquiry Purpose : CREDIT CARD
+Date of Enquiry : 2025-12-12 16:19:04
+In case of any queries or clarification regarding the above information, please contact the respective bank/financial institution or connect with us. Please quote your ECN number(s) while communicating with us to help us assist you better.
+
+Visit us for more details
+A credit enquiry occurs when a bank/financial institution checks your CIBIL report, usually in connection with a loan or credit application. While checking your CIBIL report, it is important to verify your personal information.
+
+There are certain types of loans (such as small ticket Personal Loans) which are availed through digital lending platforms. These are often financed by partner banks or financial institutions, whose names may appear on your CIBIL Report instead of the platform. Key scenarios include:
+
+Regulated entities offering credit under a different brand name. For e.g., legal entity name displayed on CIBIL report instead of popular application name
+Regulated entities offering credit through multiple brands and channels
+Loans taken through a digital lending platform may appear multiple times on your CIBIL report, where the loan amount is split between different banks or financial institutions. To better understand this co-lending arrangement, it is essential to carefully review the terms and conditions provided by the digital lending platform
+Note: Dispute Resolution is offered for FREE by CIBIL. Consumers are not required to pay any fee for rectifying discrepancies or updating their credit information. Visit us for more details.
+
+Best regards,
+
+TransUnion CIBIL",Phishing
+"Dear Customer,
+
+Greetings from TransUnion CIBIL !
+
+We wish to inform you that a recent loan/credit card enquiry was made on your CIBIL Score and Report with us.
+
+The details of the enquiry are mentioned below:
+
+Bank Name : SBI CARD
+Enquiry Control Number (ECN): 10054178119
+Enquiry Purpose : CREDIT CARD
+Date of Enquiry : 2025-12-12 16:19:04
+In case of any queries or clarification regarding the above information, please contact the respective bank/financial institution or connect with us. Please quote your ECN number(s) while communicating with us to help us assist you better.
+
+Visit us for more details
+A credit enquiry occurs when a bank/financial institution checks your CIBIL report, usually in connection with a loan or credit application. While checking your CIBIL report, it is important to verify your personal information.
+
+There are certain types of loans (such as small ticket Personal Loans) which are availed through digital lending platforms. These are often financed by partner banks or financial institutions, whose names may appear on your CIBIL Report instead of the platform. Key scenarios include:
+
+Regulated entities offering credit under a different brand name. For e.g., legal entity name displayed on CIBIL report instead of popular application name
+Regulated entities offering credit through multiple brands and channels
+Loans taken through a digital lending platform may appear multiple times on your CIBIL report, where the loan amount is split between different banks or financial institutions. To better understand this co-lending arrangement, it is essential to carefully review the terms and conditions provided by the digital lending platform
+Note: Dispute Resolution is offered for FREE by CIBIL. Consumers are not required to pay any fee for rectifying discrepancies or updating their credit information. Visit us for more details.
+
+Best regards,
+
+TransUnion CIBIL",Phishing
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+hellogmail.com,Safe
+"Flag Bits with Bit Stuffing: Uses a specific bit pattern (e.g., 01111110) as a flag. If five 1s appear in data, the 
+sender inserts a 0 to prevent confusion. ",Safe
+"Flag Bits with Bit Stuffing: Uses a specific bit pattern (e.g., 01111110) as a flag. If five 1s appear in data, the 
+sender inserts a 0 to prevent confusion. ",Safe
+"Flag Bits with Bit Stuffing: Uses a specific bit pattern (e.g., 01111110) as a flag. If five 1s appear in data, the 
+sender inserts a 0 to prevent confusion. ",Safe
+"Flag Bits with Bit Stuffing: Uses a specific bit pattern (e.g., 01111110) as a flag. If five 1s appear in data, the 
+sender inserts a 0 to prevent confusion. ",Safe

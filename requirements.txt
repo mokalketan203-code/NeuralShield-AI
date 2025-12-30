@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+nltk
+streamlit
+joblib
+pip freeze > requirements.txt
