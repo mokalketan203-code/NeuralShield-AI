@@ -1,1 +1,4 @@
 
+timestamp,email,status,conf
+2025-12-30 10:00:00,test_safe@example.com,SAFE,98.5%
+2025-12-30 10:05:00,attacker@evil-site.net,PHISHING,99.2%
