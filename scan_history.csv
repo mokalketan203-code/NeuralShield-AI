@@ -2,3 +2,7 @@
 timestamp,email,status,conf
 2025-12-30 10:00:00,test_safe@example.com,SAFE,98.5%
 2025-12-30 10:05:00,attacker@evil-site.net,PHISHING,99.2%
+2025-12-31 10:05:00,testattacker@evil-site.net,PHISHING,99.4%
+2025-12-31 11:05:00,google@evil-site.net.com,PHISHING,89.2%
+2025-12-31 11:15:30,microsoft@-site.net.outlool,PHISHING,99.2%
+2025-12-31 11:20:00,test_safe@google.com,SAFE,98.5%
