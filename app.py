@@ -242,7 +242,7 @@ def create_pdf_report(text, sender, prediction, confidence, urls, keywords, ips)
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     pdf.set_font("Arial", 'B', 16)
-    pdf.cell(200, 10, txt="NeuralShield Security Report", ln=True, align='C')
+    pdf.cell(200, 10, txt="NeuralShield-ai Security Report", ln=True, align='C')
     pdf.ln(10)
     
     status = "PHISHING DETECTED" if prediction == 1 else "SAFE EMAIL"
@@ -493,5 +493,6 @@ if st.session_state.analyzed:
         if f2.button("Mark as PHISHING"):
             save_feedback(st.session_state.text, "Phishing")
             st.toast("Feedback Saved: Phishing")
+
 
 
