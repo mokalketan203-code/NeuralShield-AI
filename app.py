@@ -288,7 +288,7 @@ def create_pdf_report(text, sender, prediction, confidence, urls, keywords, ips)
 
 # --- SIDEBAR (UI/UX) ---
 with st.sidebar:
-    st.markdown("### 📊 Live Dashboard")
+    st.markdown("### Live Dashboard")
     
     # Dashboard Metrics using "dash-card" style
     st.markdown(f"""
@@ -319,7 +319,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
     
     # History Log
-    st.markdown("### 🕒 Recent Scans")
+    st.markdown("### Recent Scans")
     
     if st.session_state.history:
         for scan in st.session_state.history:
@@ -335,7 +335,7 @@ with st.sidebar:
         st.info("No scan history yet.")
     
     st.markdown("---")
-    show_debug = st.checkbox("🐞 Debug Mode")
+    show_debug = st.checkbox(" Debug Mode")
 
 # --- MAIN PAGE (UI/UX) ---
 col1, col2 = st.columns([0.1, 0.9])
@@ -414,11 +414,11 @@ with col_input:
             st.rerun() # Refresh page to show new stats in sidebar
             # --- PRODUCTION LOGIC END ---
         else:
-            st.warning("⚠️ Please enter text to analyze.")
+            st.warning(" Please enter text to analyze.")
 
 # RESULTS AREA
 if st.session_state.analyzed:
-    st.markdown("### 📊 Analysis Report")
+    st.markdown("###  Analysis Report")
     r1, r2 = st.columns([2, 1])
     
     with r1:
@@ -426,16 +426,16 @@ if st.session_state.analyzed:
         confidence = st.session_state.confidence
         
         if prediction == 1:
-            st.error(f"🚨 **PHISHING DETECTED** (Confidence: {round(confidence*100, 2)}%)")
+            st.error(f" **PHISHING DETECTED** (Confidence: {round(confidence*100, 2)}%)")
         else:
-            st.success(f"✅ **SAFE EMAIL** (Confidence: {round(confidence*100, 2)}%)")
+            st.success(f" **SAFE EMAIL** (Confidence: {round(confidence*100, 2)}%)")
             
         # PRODUCTION: PDF Generation
         pdf_bytes = create_pdf_report(
             st.session_state.text, st.session_state.sender, prediction, confidence, 
             st.session_state.urls, st.session_state.keywords, st.session_state.ips
         )
-        st.download_button("📥 Download PDF Report", pdf_bytes, "scan_report.pdf", "application/pdf")
+        st.download_button(" Download PDF Report", pdf_bytes, "scan_report.pdf", "application/pdf")
         
         if st.session_state.sender:
             header_warnings = check_sender_mismatch(st.session_state.sender, st.session_state.text)
@@ -443,10 +443,10 @@ if st.session_state.analyzed:
                 for w in header_warnings:
                     st.warning(w)
             else:
-                st.info("✅ Sender domain matches email context.")
+                st.info(" Sender domain matches email context.")
 
         if st.session_state.urls:
-            st.markdown("#### 🔗 URL Analysis")
+            st.markdown("####  URL Analysis")
             target_url = st.session_state.urls[0]
             st.code(target_url, language="text")
             
@@ -467,16 +467,16 @@ if st.session_state.analyzed:
                     if real_dest and real_dest != target_url:
                         st.error(f"⚠️ Redirects to: `{real_dest}`")
                     elif real_dest:
-                        st.success("✅ Direct Link")
+                        st.success(" Direct Link")
 
     with r2:
-        st.markdown("#### ☁️ Threat Cloud")
+        st.markdown("####  Threat Cloud")
         if st.session_state.wordcloud_fig:
             st.pyplot(st.session_state.wordcloud_fig)
         else:
             st.caption("No word cloud data available.")
         
-        st.markdown("#### 🧠 AI Confidence")
+        st.markdown("#### AI Confidence")
         st.progress(st.session_state.confidence)
         
         if show_debug:
@@ -485,7 +485,7 @@ if st.session_state.analyzed:
             st.dataframe(prob_df, hide_index=True)
 
     st.markdown("---")
-    with st.expander("📝 Flag Incorrect Result"):
+    with st.expander(" Flag Incorrect Result"):
         f1, f2 = st.columns(2)
         if f1.button("Mark as SAFE"):
             save_feedback(st.session_state.text, "Safe")
@@ -493,3 +493,4 @@ if st.session_state.analyzed:
         if f2.button("Mark as PHISHING"):
             save_feedback(st.session_state.text, "Phishing")
             st.toast("Feedback Saved: Phishing")
+
