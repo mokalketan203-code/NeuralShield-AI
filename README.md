@@ -1,7 +1,7 @@
-# 🛡️ SafeGuard: AI-Based Phishing Email Detector
+# 🛡️ NeuralShield-ai: AI-Based Phishing Email Detector
 
 ## 📌 Overview
-SafeGuard is a Machine Learning-powered application designed to detect phishing emails with high accuracy. It analyzes email content, extracts suspicious links, and highlights trigger words used in social engineering attacks.
+NeuralShield-ai is a Machine Learning-powered application designed to detect phishing emails with high accuracy. It analyzes email content, extracts suspicious links, and highlights trigger words used in social engineering attacks.
 
 ## 🚀 Features
 * **AI Detection:** Uses a Naive Bayes Classifier (94.6% Accuracy) to classify emails as "Safe" or "Phishing".
@@ -24,3 +24,4 @@ SafeGuard is a Machine Learning-powered application designed to detect phishing 
 ## 💿 How to Run
 1.  Install dependencies: `pip install -r requirements.txt`
 2.  Run the app: `python -m streamlit run app.py`
+
