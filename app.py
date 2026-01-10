@@ -22,7 +22,7 @@ MODEL_TYPE = "MultinomialNB (Naive Bayes)"
 HISTORY_FILE = "scan_history.csv"
 
 st.set_page_config(
-    page_title="NeuralShield | Cyber Security Dashboard",
+    page_title="NeuralShield-ai | Cyber Security Dashboard",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -493,4 +493,5 @@ if st.session_state.analyzed:
         if f2.button("Mark as PHISHING"):
             save_feedback(st.session_state.text, "Phishing")
             st.toast("Feedback Saved: Phishing")
+
 
