@@ -342,7 +342,7 @@ col1, col2 = st.columns([0.1, 0.9])
 with col1:
     st.image("https://cdn-icons-png.flaticon.com/512/2092/2092663.png", width=100)
 with col2:
-    st.title("NeuralShield")
+    st.title("NeuralShield-ai")
 
 st.markdown("### Advanced Phishing Email Analysis System")
 
@@ -493,6 +493,7 @@ if st.session_state.analyzed:
         if f2.button("Mark as PHISHING"):
             save_feedback(st.session_state.text, "Phishing")
             st.toast("Feedback Saved: Phishing")
+
 
 
 
