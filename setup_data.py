@@ -29,5 +29,6 @@ if not os.path.exists('data'):
 file_path = 'data/spam_ham_dataset.csv'
 df.to_csv(file_path, index=False)
 
-print(f"✅ Success! Created '{file_path}' with sample data.")
-print("👉 You can now run 'python train.py'")
+print(f"Success! Created '{file_path}' with sample data.")
+
+print("You can now run 'python train.py'")
